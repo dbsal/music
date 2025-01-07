@@ -1,0 +1,140 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.Home-nav {
+  color: skyblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  padding-left: 150px;
+}
+.find-nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  gap: 10px;
+  font-size: 13px;
+  padding-right: 150px;
+}
+.login-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  top: -200px;
+  font-weight: bold;
+  gap: 10px;
+}
+.text-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: -100px;
+  transform: translateX(-100%);
+  gap: 10px;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+}
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: -40px;
+}
+.icon {
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 정렬*/
+  margin-top: 20px;
+  gap: 5px;
+  width: auto; /* 기존 고정된 너비를 없앰 */
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -50px; /* 전체적으로 왼쪽으로 이동 */
+}
+.img-nav {
+  height: 320px;
+  width: 300px;
+  background-image: url('./코리락쿠마.JPG');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin-top: -200px;
+  right: 430px;
+  transform: translateY(-30%);
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 10px;
+  position: fixed;
+  bottom: 60px; /* .footer보다 위로 배치 */
+  left: 0;
+  right: 0;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 30px; /* .footer-nav 아래에 위치 */
+  text-align: center;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
